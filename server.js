@@ -7,23 +7,23 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define routes to serve the HTML pages
-app.get('/', (req, res) => {
+app.get('/home.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'home.html'));
 });
 
-app.get('/kontakt', (req, res) => {
+app.get('/kontakt.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'kontakt.html'));
 });
 
-app.get('/ueber-uns', (req, res) => {
+app.get('/ueber-uns.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'ueber-uns.html'));
 });
 
-app.get('/impressum', (req, res) => {
+app.get('/impressum.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'impressum.html'));
 });
 
-app.get('/datenschutz', (req, res) => {
+app.get('/datenschutz.html', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'datenschutz.html'));
 });
 
